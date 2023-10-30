@@ -1,0 +1,302 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+
+
+:root {
+    --body-color: #272727;
+    --side-color: #1d1d1d;
+    --secand-color: #272727;
+    --icon-color: white;
+
+}
+
+body {
+
+    height: 100vh;
+    color: var(--icon-color);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.main {
+    display: flex;
+}
+
+.left-side {
+    background-color: var(--side-color);
+    height: 80vh;
+    width: 20%;
+    min-width: 200px;
+    padding: 20px;
+    position: relative;
+}
+
+.left-side .main-icon {
+    display: flex;
+    align-items: center;
+
+}
+
+.main-icon>i {
+    font-size: 25px;
+    margin-right: 30px;
+}
+
+.main-icon span {
+    display: flex;
+
+}
+
+.main-icon span i {
+    margin-right: 10px;
+    font-size: 22px;
+
+}
+
+.main-icon span p {
+    font-size: 15px;
+}
+
+.conteant {
+    background-color: var(--body-color);
+    height: 80vh;
+    width: 80%;
+    border-left: 1px solid #141414;
+}
+
+
+/* search box */
+
+.main-search {
+    position: relative;
+    height: 35px;
+    margin: 20px 0;
+}
+
+.main-search input {
+    width: 100%;
+    height: 100%;
+    background-color: var(--body-color);
+    outline: none;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    border-bottom: 1px solid var(--icon-color);
+}
+
+.main-search i {
+    position: absolute;
+    top: 25%;
+    right: 5%;
+}
+
+/* main-list */
+
+.main-list ul li {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.main-list ul li:hover {
+    background-color: var(--body-color);
+    border-radius: 8px;
+    cursor: default;
+}
+
+.main-list ul li p {
+    margin-left: 15px;
+}
+
+/* main-bottom */
+
+
+
+.main-bottom {
+    position: absolute;
+    bottom: 10px;
+    width: 85%;
+}
+
+.main-bottom ul li {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.main-bottom ul li:hover {
+    background-color: var(--body-color);
+    border-radius: 8px;
+    cursor: default;
+}
+
+.main-bottom ul li i {
+    font-size: 18px;
+}
+
+.main-bottom ul li p {
+    padding: 0 15px;
+    font-size: 18px;
+}
+
+/* conteant top */
+
+.main .conteant {
+    padding: 50px;
+}
+
+.main .conteant .top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main .conteant .top h3 {
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+.main .conteant .top .box {
+    display: flex;
+    position: relative;
+    align-items: center;
+
+}
+
+.main .conteant .top .box hr {
+    height: 10px;
+    left: 75%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.171);
+    position: absolute;
+}
+
+.main .conteant .top .add {
+    padding: 5px 15px;
+    border: 1px solid rgba(255, 255, 255, 0.171);
+    border-radius: 4px 0 0 4px;
+    background-color: #3f3e3e6e;
+}
+
+.main .conteant .top .add:hover {
+    background-color: #3f3e3e;
+}
+
+.main .conteant .top .arrow {
+    border: 1px solid rgba(255, 255, 255, 0.171);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0 4px 4px 0;
+    background-color: #3f3e3e6e;
+    padding: 5px 15px;
+}
+
+.main .conteant .top .arrow:hover {
+    background-color: #3f3e3e;
+}
+
+.main .conteant .top .arrow i {
+    font-size: 1.2rem;
+}
+
+
+
+/* conteant mid */
+
+
+.main .conteant .mid .box {
+    background-color: #3f3e3e6e;
+    display: inline-block;
+    border-radius: 8px;
+    padding: 10px 15px;
+    margin: 20px 5px;
+}
+
+.main .conteant .mid .box:hover {
+    background-color: #3f3e3e;
+}
+
+/* conteant list */
+
+
+.main .conteant .list ul li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5px 0;
+}
+
+.main .conteant .list ul li:nth-child(odd) {
+    background-color: #3f3e3e6e;
+    border-radius: 5px;
+}
+
+.main .conteant .list ul li:hover {
+    background-color: #3f3e3e6e;
+    border-radius: 5px;
+}
+
+.main .conteant .list .l-t {
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.main .conteant .list .l-t i {
+    padding-left: 10px;
+}
+
+.main .conteant .list .l-t p {
+    padding-left: 10px;
+}
+
+.main .conteant .list .l-m {
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+
+
+.main .conteant .list .l-m span {
+    padding-left: 10px;
+}
+
+.main .conteant .list .l-b {
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+/* footer */
+
+.footer {
+    background-color: rgb(3, 17, 29);
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer span{
+    margin-left: 15px;
+}
